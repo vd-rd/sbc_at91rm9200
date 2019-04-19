@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9563,7 +9563,7 @@ by exp-lbrs.ulp</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOIC8_208MIL" urn="urn:adsk.eagle:package:10458804/2" type="model" library_version="2" library_locally_modified="yes">
+<package3d name="SOIC8_208MIL" urn="urn:adsk.eagle:package:10458804/1" type="box" library_version="2">
 <description>&lt;b&gt;Small Outline IC - 208mil Wide&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="SOIC8_208MIL"/>
@@ -9589,7 +9589,7 @@ by exp-lbrs.ulp</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AT45DB" urn="urn:adsk.eagle:component:10458805/1" locally_modified="yes" prefix="IC" library_version="2" library_locally_modified="yes">
+<deviceset name="AT45DB" urn="urn:adsk.eagle:component:10458805/1" prefix="IC" library_version="2">
 <gates>
 <gate name="G$1" symbol="AT45DBXXX" x="0" y="0"/>
 </gates>
@@ -9606,7 +9606,7 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="VCC" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10458804/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10458804/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -9727,7 +9727,7 @@ by exp-lbrs.ulp</description>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SV2" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA05-2" device="" package3d_urn="urn:adsk.eagle:package:8329/1"/>
 <part name="SV3" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-2" device="" package3d_urn="urn:adsk.eagle:package:8368/1"/>
-<part name="IC6" library="parts-adesto" library_urn="urn:adsk.eagle:library:10458800" deviceset="AT45DB" device="-S" package3d_urn="urn:adsk.eagle:package:10458804/2"/>
+<part name="IC6" library="parts-adesto" library_urn="urn:adsk.eagle:library:10458800" deviceset="AT45DB" device="-S" package3d_urn="urn:adsk.eagle:package:10458804/1"/>
 <part name="R14" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="RES-" device="0603" package3d_urn="urn:adsk.eagle:package:8309995/2"/>
 <part name="LED1" library="parts-optosupply" library_urn="urn:adsk.eagle:library:7630749" deviceset="OSTB1204" device="C1E" package3d_urn="urn:adsk.eagle:package:7630752/2"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
