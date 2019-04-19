@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9769,6 +9769,8 @@ by exp-lbrs.ulp</description>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="27"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
 </parts>
 <sheets>
 <sheet>
@@ -11000,6 +11002,14 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="62.23" y="113.2586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="108.458" size="1.778" layer="96"/>
 </instance>
+<instance part="R26" gate="G$1" x="27.94" y="109.22" smashed="yes">
+<attribute name="NAME" x="24.13" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.13" y="105.918" size="1.778" layer="96"/>
+</instance>
+<instance part="R27" gate="G$1" x="27.94" y="101.6" smashed="yes">
+<attribute name="NAME" x="24.13" y="103.0986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.13" y="98.298" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="ADDR:ADDR[0..31]">
@@ -11351,6 +11361,14 @@ by exp-lbrs.ulp</description>
 <pinref part="R25" gate="G$1" pin="2"/>
 <wire x1="71.12" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <label x="76.2" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="2"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="109.22" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="109.22" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
+<junction x="33.02" y="109.22"/>
+<label x="38.1" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -12172,18 +12190,28 @@ by exp-lbrs.ulp</description>
 <label x="71.12" y="137.16" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
-<net name="I2C_DAT" class="0">
+<net name="I2C_SDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA25"/>
 <wire x1="55.88" y1="132.08" x2="73.66" y2="132.08" width="0.1524" layer="91"/>
 <label x="71.12" y="132.08" size="1.778" layer="95" align="bottom-right"/>
 </segment>
+<segment>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="109.22" x2="7.62" y2="109.22" width="0.1524" layer="91"/>
+<label x="7.62" y="109.22" size="1.778" layer="95"/>
+</segment>
 </net>
-<net name="I2C_CLK" class="0">
+<net name="I2C_SCL" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA26"/>
 <wire x1="55.88" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
 <label x="71.12" y="129.54" size="1.778" layer="95" align="bottom-right"/>
+</segment>
+<segment>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
+<label x="10.16" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MCCK" class="0">

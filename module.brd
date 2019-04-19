@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -3204,6 +3204,16 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="19.8" y="16.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="17.895" y="17.235" size="1.27" layer="27" rot="R270"/>
 </element>
+<element name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="" x="-1.2" y="-4.6" smashed="yes">
+<attribute name="NAME" x="-1.835" y="-3.965" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-1.2" y="-4.6" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-1.835" y="-6.505" size="1.27" layer="27"/>
+</element>
+<element name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="" x="-1.2" y="-8.2" smashed="yes">
+<attribute name="NAME" x="-1.835" y="-7.565" size="1.27" layer="25"/>
+<attribute name="SPICEPREFIX" value="R" x="-1.2" y="-8.2" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-1.835" y="-10.105" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -6005,12 +6015,6 @@ design rules under a new name.</description>
 <wire x1="29.35" y1="21.95" x2="31.6" y2="24.2" width="0.2" layer="1"/>
 <wire x1="31.6" y1="24.2" x2="36.35" y2="38.27" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="I2C_DAT">
-<contactref element="U1" pad="71"/>
-</signal>
-<signal name="I2C_CLK">
-<contactref element="U1" pad="72"/>
-</signal>
 <signal name="UART_TXD1">
 <contactref element="U1" pad="102"/>
 <contactref element="SV1" pad="15"/>
@@ -6197,6 +6201,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="I2C_SCL">
 <contactref element="SV1" pad="17"/>
+<contactref element="U1" pad="72"/>
+<contactref element="R27" pad="1"/>
+<wire x1="21.86" y1="20.45" x2="28.73" y2="38.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.7" y1="-8.2" x2="21.86" y2="20.45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="SV1" pad="19"/>
@@ -6231,6 +6239,10 @@ design rules under a new name.</description>
 </signal>
 <signal name="I2C_SDA">
 <contactref element="SV1" pad="18"/>
+<contactref element="U1" pad="71"/>
+<contactref element="R26" pad="1"/>
+<wire x1="21.86" y1="20.95" x2="28.73" y2="35.73" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.7" y1="-4.6" x2="21.86" y2="20.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO1">
 <contactref element="SV1" pad="20"/>
@@ -6607,22 +6619,43 @@ design rules under a new name.</description>
 <contactref element="C63" pad="1"/>
 <contactref element="R24" pad="2"/>
 <contactref element="R25" pad="2"/>
+<contactref element="R26" pad="2"/>
+<contactref element="R27" pad="2"/>
 <wire x1="68.8" y1="26.52" x2="79.2" y2="26.52" width="0" layer="19" extent="1-1"/>
-<wire x1="18.4" y1="19.7" x2="19.7" y2="19.7" width="0" layer="19" extent="1-1"/>
+<wire x1="67.2" y1="23.7" x2="68.2" y2="25.5" width="0" layer="19" extent="1-1"/>
+<wire x1="60.4" y1="25.5" x2="62.2" y2="24.5" width="0" layer="19" extent="1-1"/>
+<wire x1="55.2" y1="25.5" x2="58.4" y2="25.7" width="0" layer="19" extent="1-1"/>
+<wire x1="54.05" y1="17.45" x2="54.15" y2="25.45" width="0" layer="19" extent="1-1"/>
+<wire x1="58.4" y1="12.12" x2="55.55" y2="16.85" width="0" layer="19" extent="1-1"/>
 <wire x1="60" y1="12.12" x2="58.4" y2="12.12" width="0" layer="19" extent="1-1"/>
 <wire x1="60" y1="12.11999375" x2="60" y2="12.12" width="0" layer="19" extent="1-1"/>
-<wire x1="20" y1="21.5" x2="19.8" y2="19.8" width="0" layer="19" extent="1-1"/>
-<wire x1="19.2" y1="13.9" x2="17.9" y2="11.8" width="0" layer="19" extent="1-1"/>
+<wire x1="64.8" y1="11.7" x2="60.9" y2="11" width="0" layer="19" extent="1-1"/>
+<wire x1="68.8" y1="11.1" x2="65.5" y2="11" width="0" layer="19" extent="1-1"/>
+<wire x1="53.9" y1="7.7" x2="57.65" y2="11.25" width="0" layer="19" extent="1-1"/>
+<wire x1="75.45" y1="10.2" x2="68.9" y2="11" width="0" layer="19" extent="1-1"/>
+<wire x1="79.2" y1="11.3" x2="76.55" y2="10.2" width="0" layer="19" extent="1-1"/>
+<wire x1="44.75" y1="2.06" x2="50.3" y2="7.95" width="0" layer="19" extent="1-1"/>
+<wire x1="37.5" y1="0.9" x2="44.75" y2="2.06" width="0" layer="19" extent="1-1"/>
+<wire x1="46.75" y1="32.34" x2="52.14" y2="25.45" width="0" layer="19" extent="1-1"/>
+<wire x1="37.9" y1="33.9" x2="46.6" y2="33.9" width="0" layer="19" extent="1-1"/>
+<wire x1="30.25" y1="33.75" x2="37.25" y2="33.9" width="0" layer="19" extent="1-1"/>
+<wire x1="27.25" y1="0.95" x2="36.2" y2="0.7" width="0" layer="19" extent="1-1"/>
+<wire x1="21.86" y1="28.45" x2="30.25" y2="32.34" width="0" layer="19" extent="1-1"/>
+<wire x1="20" y1="21.5" x2="19.95" y2="28.45" width="0" layer="19" extent="1-1"/>
+<wire x1="19.8" y1="19.8" x2="20" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="18.4" y1="19.7" x2="19.7" y2="19.7" width="0" layer="19" extent="1-1"/>
+<wire x1="19.8" y1="16.1" x2="19.95" y2="18.95" width="0" layer="19" extent="1-1"/>
+<wire x1="19.2" y1="13.9" x2="19.8" y2="16.1" width="0" layer="19" extent="1-1"/>
 <wire x1="17.6" y1="15.1" x2="19.2" y2="13.9" width="0" layer="19" extent="1-1"/>
 <wire x1="16.2" y1="15.1" x2="17.6" y2="15.1" width="0" layer="19" extent="1-1"/>
 <wire x1="14.6" y1="15.05" x2="16.2" y2="15.1" width="0" layer="19" extent="1-1"/>
-<wire x1="19.8" y1="16.1" x2="19.2" y2="13.9" width="0" layer="19" extent="1-1"/>
-<wire x1="53.9" y1="7.7" x2="57.65" y2="11.25" width="0" layer="19" extent="1-1"/>
-<wire x1="19.95" y1="28.45" x2="20" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="44.75" y1="2.06" x2="50.3" y2="7.95" width="0" layer="19" extent="1-1"/>
-<wire x1="37.5" y1="0.9" x2="44.75" y2="2.06" width="0" layer="19" extent="1-1"/>
-<wire x1="37.9" y1="33.9" x2="46.6" y2="33.9" width="0" layer="19" extent="1-1"/>
-<wire x1="30.25" y1="33.75" x2="37.25" y2="33.9" width="0" layer="19" extent="1-1"/>
+<wire x1="17.9" y1="11.8" x2="19.2" y2="13.9" width="0" layer="19" extent="1-1"/>
+<wire x1="19.7" y1="10.7" x2="18.642" y2="10.55" width="0" layer="19" extent="1-1"/>
+<wire x1="67.2" y1="37.88" x2="67.6" y2="28.6" width="0" layer="19" extent="1-1"/>
+<wire x1="62.7" y1="39" x2="66.4" y2="39" width="0" layer="19" extent="1-1"/>
+<wire x1="0.6262" y1="23.6" x2="14.6" y2="15.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.7" y1="-4.6" x2="16" y2="6.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.7" y1="-8.2" x2="-0.7" y2="-4.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="REG_EN">
 <contactref element="IC5" pad="5"/>
