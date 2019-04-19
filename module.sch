@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9768,6 +9768,7 @@ by exp-lbrs.ulp</description>
 <part name="C63" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="27"/>
+<part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 </parts>
 <sheets>
 <sheet>
@@ -10995,6 +10996,10 @@ by exp-lbrs.ulp</description>
 <instance part="GND30" gate="1" x="241.3" y="-58.42" smashed="yes">
 <attribute name="VALUE" x="238.76" y="-60.96" size="1.778" layer="96"/>
 </instance>
+<instance part="R25" gate="G$1" x="66.04" y="111.76" smashed="yes">
+<attribute name="NAME" x="62.23" y="113.2586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="62.23" y="108.458" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 <bus name="ADDR:ADDR[0..31]">
@@ -11341,6 +11346,11 @@ by exp-lbrs.ulp</description>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="91"/>
 <label x="63.5" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
+<label x="76.2" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -12337,8 +12347,12 @@ by exp-lbrs.ulp</description>
 <net name="BMS" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA31/BMS"/>
-<wire x1="55.88" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="116.84" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
 <label x="68.58" y="116.84" size="1.778" layer="95"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="111.76" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
+<junction x="60.96" y="116.84"/>
 </segment>
 </net>
 <net name="VCC" class="0">

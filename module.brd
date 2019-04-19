@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -3199,6 +3199,11 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="20" y="22" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="18.095" y="22.635" size="1.27" layer="27" rot="R270"/>
 </element>
+<element name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k" x="19.8" y="16.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.435" y="17.235" size="1.27" layer="25" rot="R270"/>
+<attribute name="SPICEPREFIX" value="R" x="19.8" y="16.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="17.895" y="17.235" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -6257,6 +6262,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="BMS">
 <contactref element="U1" pad="79"/>
+<contactref element="R25" pad="1"/>
+<wire x1="19.8" y1="17.1" x2="21.86" y2="16.95" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC6" pad="6"/>
@@ -6582,8 +6589,7 @@ design rules under a new name.</description>
 <wire x1="46.75" y1="32.34" x2="46.75" y2="34.15" width="0.2" layer="1"/>
 <wire x1="46.75" y1="34.15" x2="47.8" y2="35.2" width="0.2" layer="1"/>
 <via x="47.8" y="35.2" extent="1-16" drill="0.3"/>
-<wire x1="18.642" y1="10.55" x2="17.8" y2="10.55" width="0.2" layer="1"/>
-<wire x1="17.8" y1="10.55" x2="17.7" y2="10.55" width="0.2" layer="1"/>
+<wire x1="18.642" y1="10.55" x2="17.7" y2="10.55" width="0.2" layer="1"/>
 <wire x1="17.7" y1="10.55" x2="17.1" y2="9.95" width="0.2" layer="1"/>
 <wire x1="17.1" y1="9.95" x2="17.1" y2="8.3" width="0.2" layer="1"/>
 <wire x1="17.4" y1="7.1" x2="16.9" y2="6.6" width="0.2" layer="1"/>
@@ -6600,6 +6606,7 @@ design rules under a new name.</description>
 <contactref element="R23" pad="1"/>
 <contactref element="C63" pad="1"/>
 <contactref element="R24" pad="2"/>
+<contactref element="R25" pad="2"/>
 <wire x1="68.8" y1="26.52" x2="79.2" y2="26.52" width="0" layer="19" extent="1-1"/>
 <wire x1="18.4" y1="19.7" x2="19.7" y2="19.7" width="0" layer="19" extent="1-1"/>
 <wire x1="60" y1="12.12" x2="58.4" y2="12.12" width="0" layer="19" extent="1-1"/>
@@ -6609,6 +6616,7 @@ design rules under a new name.</description>
 <wire x1="17.6" y1="15.1" x2="19.2" y2="13.9" width="0" layer="19" extent="1-1"/>
 <wire x1="16.2" y1="15.1" x2="17.6" y2="15.1" width="0" layer="19" extent="1-1"/>
 <wire x1="14.6" y1="15.05" x2="16.2" y2="15.1" width="0" layer="19" extent="1-1"/>
+<wire x1="19.8" y1="16.1" x2="19.2" y2="13.9" width="0" layer="19" extent="1-1"/>
 <wire x1="53.9" y1="7.7" x2="57.65" y2="11.25" width="0" layer="19" extent="1-1"/>
 <wire x1="19.95" y1="28.45" x2="20" y2="21.5" width="0" layer="19" extent="1-1"/>
 <wire x1="44.75" y1="2.06" x2="50.3" y2="7.95" width="0" layer="19" extent="1-1"/>
