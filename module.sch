@@ -6953,93 +6953,6 @@ down to 0 V. In addition, the delay of the output can be adjusted by an external
 </deviceset>
 </devicesets>
 </library>
-<library name="parts_ck" urn="urn:adsk.eagle:library:7450062">
-<packages>
-<package name="SW_PTS840GMSMTRLFS" urn="urn:adsk.eagle:footprint:7450063/2" library_version="2">
-<wire x1="-1.75" y1="1.45" x2="1.75" y2="1.45" width="0.127" layer="51"/>
-<wire x1="1.75" y1="1.45" x2="1.75" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="1.75" y1="-1.45" x2="1" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="1" y1="-1.45" x2="-1" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1.45" x2="-1.75" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-1.75" y1="-1.45" x2="-1.75" y2="1.45" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1.45" x2="-1" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="-1" y1="-2.1" x2="1" y2="-2.1" width="0.127" layer="51"/>
-<wire x1="1" y1="-2.1" x2="1" y2="-1.45" width="0.127" layer="51"/>
-<text x="-2.763109375" y="2.51191875" size="1.27605" layer="25">&gt;NAME</text>
-<circle x="-2.3" y="1.7" radius="0.1" width="0.127" layer="21"/>
-<smd name="1" x="-1.9" y="0.725" dx="1.4" dy="1.05" layer="1"/>
-<smd name="2" x="1.9" y="0.725" dx="1.4" dy="1.05" layer="1"/>
-<smd name="3" x="-1.9" y="-0.725" dx="1.4" dy="1.05" layer="1"/>
-<smd name="4" x="1.9" y="-0.725" dx="1.4" dy="1.05" layer="1"/>
-<smd name="5" x="0" y="1.7" dx="1.1" dy="0.5" layer="1"/>
-<hole x="0" y="-0.9" drill="0.7"/>
-<hole x="0" y="0.9" drill="0.7"/>
-<pad name="P$1" x="-2" y="-0.8" drill="0.65" diameter="0.7"/>
-<pad name="P$2" x="2" y="-0.8" drill="0.65" diameter="0.7"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SW_PTS840GMSMTRLFS" urn="urn:adsk.eagle:package:7450065/3" type="model" library_version="3">
-<packageinstances>
-<packageinstance name="SW_PTS840GMSMTRLFS"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="PTS840_GM_SMTR_LFS" urn="urn:adsk.eagle:symbol:7450064/2" library_version="2">
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
-<wire x1="1.016" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="5.08" x2="0" y2="6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="6.35" x2="1.016" y2="6.35" width="0.254" layer="94"/>
-<text x="-5.08591875" y="8.13748125" size="1.78006875" layer="95">&gt;NAME</text>
-<text x="-5.10263125" y="-5.1253" size="1.78591875" layer="96">&gt;VALUE</text>
-<pin name="1" x="7.62" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="3" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="SHIELD" x="-7.62" y="0" length="short" direction="pas"/>
-<pin name="2" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="4" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PTS840_GM_SMTR_LFS" urn="urn:adsk.eagle:component:7450066/3" prefix="S" library_version="3">
-<description>Switch Tactile N.O. SPST Button Gull Wing 0.05A 12VDC 100000Cycle 1.57N SMD T/R</description>
-<gates>
-<gate name="G$1" symbol="PTS840_GM_SMTR_LFS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SW_PTS840GMSMTRLFS">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="SHIELD" pad="5"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7450065/3"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Switch Tactile N.O. SPST Button Gull Wing 0.05A 12VDC 100000Cycle 1.57N SMD T/R "/>
-<attribute name="MF" value="C&amp;K"/>
-<attribute name="MP" value="PTS840 GM SMTR LFS"/>
-<attribute name="PACKAGE" value="None"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="parts-ti" urn="urn:adsk.eagle:library:7529163">
 <packages>
 <package name="TSSOP8" urn="urn:adsk.eagle:footprint:19057/1" library_version="7">
@@ -9693,8 +9606,6 @@ by exp-lbrs.ulp</description>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C44" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
-<part name="S1" library="parts_ck" library_urn="urn:adsk.eagle:library:7450062" deviceset="PTS840_GM_SMTR_LFS" device="" package3d_urn="urn:adsk.eagle:package:7450065/3"/>
-<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
 <part name="IC4" library="parts-ti" library_urn="urn:adsk.eagle:library:7529163" deviceset="TPS211" device="5A" package3d_urn="urn:adsk.eagle:package:19084/2"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11000,13 +10911,6 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="24.13" y="19.2786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.13" y="14.478" size="1.778" layer="96"/>
 </instance>
-<instance part="S1" gate="G$1" x="12.7" y="10.16" smashed="yes">
-<attribute name="NAME" x="7.61408125" y="18.29748125" size="1.78006875" layer="95"/>
-<attribute name="VALUE" x="-0.02263125" y="5.0347" size="1.78591875" layer="96"/>
-</instance>
-<instance part="GND19" gate="1" x="-2.54" y="7.62" smashed="yes">
-<attribute name="VALUE" x="-5.08" y="5.08" size="1.778" layer="96"/>
-</instance>
 <instance part="R4" gate="G$1" x="76.2" y="25.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="77.6986" y="29.21" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="72.898" y="29.21" size="1.778" layer="96" rot="R270"/>
@@ -11266,19 +11170,6 @@ by exp-lbrs.ulp</description>
 <pinref part="C44" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="5.08" x2="35.56" y2="5.08" width="0.1524" layer="91"/>
 <junction x="40.64" y="5.08"/>
-</segment>
-<segment>
-<pinref part="S1" gate="G$1" pin="3"/>
-<wire x1="5.08" y1="15.24" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="15.24" x2="-2.54" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<pinref part="S1" gate="G$1" pin="SHIELD"/>
-<wire x1="-2.54" y1="12.7" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
-<junction x="-2.54" y="10.16"/>
-<pinref part="S1" gate="G$1" pin="4"/>
-<wire x1="5.08" y1="12.7" x2="-2.54" y2="12.7" width="0.1524" layer="91"/>
-<junction x="-2.54" y="12.7"/>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="GND"/>
@@ -12317,13 +12208,7 @@ by exp-lbrs.ulp</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="17.78" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <junction x="33.02" y="17.78"/>
-<wire x1="33.02" y1="15.24" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="2"/>
-<pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="12.7" x2="22.86" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="12.7" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
-<junction x="22.86" y="15.24"/>
+<wire x1="33.02" y1="15.24" x2="20.32" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
