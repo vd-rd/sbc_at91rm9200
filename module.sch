@@ -9763,6 +9763,7 @@ by exp-lbrs.ulp</description>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
 <part name="SV4" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA05-1" device="" package3d_urn="urn:adsk.eagle:package:8332/1"/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C64" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 </parts>
 <sheets>
 <sheet>
@@ -11037,6 +11038,12 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="24.13" y="103.0986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="24.13" y="98.298" size="1.778" layer="96"/>
 </instance>
+<instance part="C64" gate="G$1" x="261.62" y="25.4" smashed="yes">
+<attribute name="NAME" x="263.144" y="25.781" size="1.778" layer="95"/>
+<attribute name="VALUE" x="263.144" y="20.701" size="1.778" layer="96"/>
+<attribute name="RATING" x="264.16" y="24.384" size="1.016" layer="97"/>
+<attribute name="PACKAGE" x="264.16" y="22.86" size="1.016" layer="97"/>
+</instance>
 </instances>
 <busses>
 <bus name="ADDR:ADDR[0..31]">
@@ -11181,6 +11188,9 @@ by exp-lbrs.ulp</description>
 <junction x="241.3" y="20.32"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <junction x="154.94" y="20.32"/>
+<pinref part="C64" gate="G$1" pin="2"/>
+<wire x1="251.46" y1="20.32" x2="261.62" y2="20.32" width="0.1524" layer="91"/>
+<junction x="251.46" y="20.32"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
@@ -11369,6 +11379,9 @@ by exp-lbrs.ulp</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="27.94" x2="251.46" y2="27.94" width="0.1524" layer="91"/>
 <junction x="241.3" y="27.94"/>
+<pinref part="C64" gate="G$1" pin="1"/>
+<wire x1="261.62" y1="27.94" x2="251.46" y2="27.94" width="0.1524" layer="91"/>
+<junction x="251.46" y="27.94"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="VCC"/>
