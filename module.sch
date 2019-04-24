@@ -11297,6 +11297,18 @@ by exp-lbrs.ulp</description>
 <junction x="33.02" y="109.22"/>
 <label x="38.1" y="109.22" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC6" gate="G$1" pin="VCC"/>
+<wire x1="231.14" y1="-48.26" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
+<label x="243.84" y="-48.26" size="1.778" layer="95"/>
+<pinref part="C62" gate="G$1" pin="1"/>
+<wire x1="241.3" y1="-48.26" x2="248.92" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-48.26" x2="251.46" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="248.92" y="-48.26"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="241.3" y1="-50.8" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="241.3" y="-48.26"/>
+</segment>
 </net>
 <net name="+1V8" class="0">
 <segment>
@@ -12302,20 +12314,6 @@ by exp-lbrs.ulp</description>
 <wire x1="60.96" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="111.76" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
 <junction x="60.96" y="116.84"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="IC6" gate="G$1" pin="VCC"/>
-<wire x1="231.14" y1="-48.26" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
-<label x="243.84" y="-48.26" size="1.778" layer="95"/>
-<pinref part="C62" gate="G$1" pin="1"/>
-<wire x1="241.3" y1="-48.26" x2="248.92" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-48.26" x2="251.46" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="248.92" y="-48.26"/>
-<pinref part="R28" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="-50.8" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="241.3" y="-48.26"/>
 </segment>
 </net>
 <net name="NRST" class="0">
