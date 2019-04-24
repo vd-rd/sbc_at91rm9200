@@ -12367,6 +12367,34 @@ by exp-lbrs.ulp</description>
 <label x="99.06" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="MCCDT" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB2"/>
+<wire x1="22.86" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="5.08" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_R" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB6"/>
+<wire x1="22.86" y1="78.74" x2="5.08" y2="78.74" width="0.1524" layer="91"/>
+<label x="5.08" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_G" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB8"/>
+<wire x1="22.86" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
+<label x="5.08" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED_B" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB10"/>
+<wire x1="22.86" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
+<label x="5.08" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
