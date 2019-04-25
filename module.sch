@@ -3,7 +3,7 @@
 <eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -9547,21 +9547,21 @@ by exp-lbrs.ulp</description>
 <part name="C18" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="C19" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="C20" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
-<part name="C21" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="C22" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="C21" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="5.6nF"/>
+<part name="C22" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="680pF"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1.27k"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C23" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="C24" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="C23" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="4.7nF"/>
+<part name="C24" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="470pF"/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1.96k"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q1" library="parts-srpassives" library_urn="urn:adsk.eagle:library:8336808" deviceset="3215" device="-7" package3d_urn="urn:adsk.eagle:package:10458514/2"/>
-<part name="C25" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="C26" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="Q2" library="parts-iqd" library_urn="urn:adsk.eagle:library:10458496" deviceset="CFPX–217" device="-NHT" package3d_urn="urn:adsk.eagle:package:10458505/2"/>
+<part name="Q1" library="parts-srpassives" library_urn="urn:adsk.eagle:library:8336808" deviceset="3215" device="-7" package3d_urn="urn:adsk.eagle:package:10458514/2" value="18.432MHz"/>
+<part name="C25" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="9pF"/>
+<part name="C26" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="9pF"/>
+<part name="Q2" library="parts-iqd" library_urn="urn:adsk.eagle:library:10458496" deviceset="CFPX–217" device="-NHT" package3d_urn="urn:adsk.eagle:package:10458505/2" value="32.768kHz"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C27" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="C28" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
+<part name="C27" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="15pF"/>
+<part name="C28" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="15pF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C29" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="C30" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
@@ -9580,7 +9580,7 @@ by exp-lbrs.ulp</description>
 <part name="C42" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SV1" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA18-2" device="" package3d_urn="urn:adsk.eagle:package:10613619/1"/>
-<part name="CON1" library="parts-amphenol" library_urn="urn:adsk.eagle:library:7627682" deviceset="10118194-00" device="01LF" package3d_urn="urn:adsk.eagle:package:7627706/3"/>
+<part name="CON1" library="parts-amphenol" library_urn="urn:adsk.eagle:library:7627682" deviceset="10118194-00" device="01LF" package3d_urn="urn:adsk.eagle:package:7627706/3" value="microusb"/>
 <part name="CON2" library="parts-attend" library_urn="urn:adsk.eagle:library:7445056" deviceset="112J-TXAR" device="" package3d_urn="urn:adsk.eagle:package:7566117/4"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9593,13 +9593,13 @@ by exp-lbrs.ulp</description>
 <part name="IC3" library="parts-st" library_urn="urn:adsk.eagle:library:7567453" deviceset="STM1831" device="" package3d_urn="urn:adsk.eagle:package:10406617/1"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C44" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
-<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="100k"/>
-<part name="IC4" library="parts-ti" library_urn="urn:adsk.eagle:library:7529163" deviceset="TPS211" device="5A" package3d_urn="urn:adsk.eagle:package:19084/2"/>
+<part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="IC4" library="parts-ti" library_urn="urn:adsk.eagle:library:7529163" deviceset="TPS211" device="5A" package3d_urn="urn:adsk.eagle:package:19084/2" value="TPS2115A"/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C45" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3"/>
-<part name="C46" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3"/>
-<part name="C47" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3"/>
+<part name="C45" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3" value="10uF"/>
+<part name="C46" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3" value="10uF"/>
+<part name="C47" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3" value="10uF"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="27"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="27"/>
 <part name="C48" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="15pF"/>
@@ -9648,22 +9648,24 @@ by exp-lbrs.ulp</description>
 <part name="C61" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3" value="10uF"/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C62" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3"/>
+<part name="C62" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0603" package3d_urn="urn:adsk.eagle:package:8309187/3" value="1uF"/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
-<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
-<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="180"/>
+<part name="R21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="180"/>
+<part name="R22" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="180"/>
 <part name="R23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
 <part name="C63" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="27"/>
+<part name="R24" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 <part name="R25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
-<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
-<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="R26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1.8k"/>
+<part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="1.8k"/>
 <part name="SV4" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA05-1" device="" package3d_urn="urn:adsk.eagle:package:10613630/1"/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C64" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="100nF"/>
-<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3"/>
+<part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
+<part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0402" package3d_urn="urn:adsk.eagle:package:23547/3" value="47k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9726,22 +9728,22 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="151.13" y="141.478" size="1.778" layer="96"/>
 </instance>
 <instance part="C48" gate="G$1" x="162.56" y="160.02" smashed="yes">
-<attribute name="NAME" x="163.195" y="164.084" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="164.084" y="160.401" size="1.778" layer="95"/>
 <attribute name="VALUE" x="164.084" y="155.321" size="1.778" layer="96"/>
 <attribute name="RATING" x="165.1" y="159.004" size="1.016" layer="97"/>
 <attribute name="PACKAGE" x="165.1" y="157.48" size="1.016" layer="97"/>
 </instance>
 <instance part="C49" gate="G$1" x="162.56" y="149.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="161.925" y="145.796" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="168.656" y="149.479" size="1.778" layer="96" rot="R180"/>
-<attribute name="RATING" x="160.02" y="150.876" size="1.016" layer="97" rot="R180"/>
-<attribute name="PACKAGE" x="160.02" y="152.4" size="1.016" layer="97" rot="R180"/>
+<attribute name="NAME" x="163.83" y="152.527" size="1.778" layer="95"/>
+<attribute name="VALUE" x="163.83" y="147.701" size="1.778" layer="96"/>
+<attribute name="RATING" x="165.354" y="151.384" size="1.016" layer="97"/>
+<attribute name="PACKAGE" x="165.354" y="149.86" size="1.016" layer="97"/>
 </instance>
 <instance part="C50" gate="G$1" x="152.4" y="157.48" smashed="yes">
-<attribute name="NAME" x="153.035" y="161.544" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="153.924" y="152.781" size="1.778" layer="96"/>
-<attribute name="RATING" x="154.94" y="156.464" size="1.016" layer="97"/>
-<attribute name="PACKAGE" x="154.94" y="154.94" size="1.016" layer="97"/>
+<attribute name="NAME" x="145.542" y="157.353" size="1.778" layer="95"/>
+<attribute name="VALUE" x="145.542" y="152.781" size="1.778" layer="96"/>
+<attribute name="RATING" x="145.542" y="155.956" size="1.016" layer="97"/>
+<attribute name="PACKAGE" x="145.542" y="154.686" size="1.016" layer="97"/>
 </instance>
 <instance part="R7" gate="G$1" x="215.9" y="152.4" smashed="yes">
 <attribute name="NAME" x="212.09" y="153.8986" size="1.778" layer="95"/>
@@ -9922,16 +9924,16 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="172.72" y="33.02" size="1.778" layer="96"/>
 </instance>
 <instance part="R20" gate="G$1" x="43.18" y="20.32" smashed="yes" rot="R180">
-<attribute name="NAME" x="46.99" y="18.8214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="23.622" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="35.56" y="20.8026" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.736" y="20.828" size="1.778" layer="96"/>
 </instance>
 <instance part="R21" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="R180">
-<attribute name="NAME" x="46.99" y="13.7414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="18.542" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="35.56" y="15.9766" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.482" y="16.002" size="1.778" layer="96"/>
 </instance>
 <instance part="R22" gate="G$1" x="43.18" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="46.99" y="8.6614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="13.462" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="35.56" y="10.6426" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.482" y="10.922" size="1.778" layer="96"/>
 </instance>
 <instance part="R24" gate="G$1" x="83.82" y="154.94" smashed="yes">
 <attribute name="NAME" x="80.01" y="156.4386" size="1.778" layer="95"/>
@@ -10849,8 +10851,8 @@ by exp-lbrs.ulp</description>
 <attribute name="VALUE" x="307.34" y="5.08" size="1.778" layer="96"/>
 </instance>
 <instance part="Q1" gate="G$1" x="330.2" y="20.32" smashed="yes">
-<attribute name="NAME" x="334.01" y="21.59" size="1.778" layer="95"/>
-<attribute name="VALUE" x="334.01" y="17.78" size="1.778" layer="96"/>
+<attribute name="NAME" x="328.93" y="24.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="332.74" y="24.13" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C25" gate="G$1" x="325.12" y="15.24" smashed="yes">
 <attribute name="NAME" x="326.644" y="15.621" size="1.778" layer="95"/>
@@ -10865,8 +10867,8 @@ by exp-lbrs.ulp</description>
 <attribute name="PACKAGE" x="337.82" y="12.7" size="1.016" layer="97"/>
 </instance>
 <instance part="Q2" gate="G$1" x="347.98" y="20.32" smashed="yes">
-<attribute name="NAME" x="351.79" y="21.59" size="1.778" layer="95"/>
-<attribute name="VALUE" x="351.79" y="17.78" size="1.778" layer="96"/>
+<attribute name="NAME" x="346.71" y="24.13" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="350.52" y="24.13" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND8" gate="1" x="330.2" y="7.62" smashed="yes">
 <attribute name="VALUE" x="327.66" y="5.08" size="1.778" layer="96"/>
@@ -10910,8 +10912,8 @@ by exp-lbrs.ulp</description>
 <instance part="IC6" gate="G$1" x="215.9" y="-48.26" smashed="yes">
 <attribute name="NAME" x="226.06" y="-38.1" size="2.1844" layer="95" rot="R180"/>
 </instance>
-<instance part="GND16" gate="1" x="256.54" y="-50.8" smashed="yes">
-<attribute name="VALUE" x="254" y="-53.34" size="1.778" layer="96"/>
+<instance part="GND16" gate="1" x="259.08" y="-50.8" smashed="yes">
+<attribute name="VALUE" x="256.54" y="-53.34" size="1.778" layer="96"/>
 </instance>
 <instance part="C62" gate="G$1" x="248.92" y="-50.8" smashed="yes">
 <attribute name="NAME" x="250.444" y="-50.419" size="1.778" layer="95"/>
@@ -10943,6 +10945,14 @@ by exp-lbrs.ulp</description>
 <instance part="R28" gate="G$1" x="236.22" y="-50.8" smashed="yes">
 <attribute name="NAME" x="232.41" y="-49.3014" size="1.778" layer="95"/>
 <attribute name="VALUE" x="232.41" y="-54.102" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="88.9" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="87.4014" y="140.97" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="92.202" y="140.97" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R30" gate="G$1" x="81.28" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="79.7814" y="125.73" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="84.582" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -11169,13 +11179,18 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="IC6" gate="G$1" pin="GND"/>
-<wire x1="231.14" y1="-45.72" x2="256.54" y2="-45.72" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="-45.72" x2="256.54" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="-45.72" x2="259.08" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="259.08" y1="-45.72" x2="259.08" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C62" gate="G$1" pin="2"/>
 <pinref part="GND30" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="JTAGSEL"/>
+<wire x1="218.44" y1="76.2" x2="208.28" y2="76.2" width="0.1524" layer="91"/>
+<label x="208.28" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -11308,6 +11323,16 @@ by exp-lbrs.ulp</description>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="241.3" y1="-50.8" x2="241.3" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="241.3" y="-48.26"/>
+</segment>
+<segment>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="149.86" x2="88.9" y2="152.4" width="0.1524" layer="91"/>
+<label x="88.9" y="149.86" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="134.62" x2="81.28" y2="137.16" width="0.1524" layer="91"/>
+<label x="81.28" y="134.62" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="+1V8" class="0">
@@ -11958,8 +11983,9 @@ by exp-lbrs.ulp</description>
 <net name="NWAIT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PC6"/>
-<wire x1="111.76" y1="139.7" x2="96.52" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="139.7" x2="88.9" y2="139.7" width="0.1524" layer="91"/>
 <label x="93.98" y="139.7" size="1.778" layer="95"/>
+<pinref part="R29" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="ADDR16" class="0">
@@ -12163,8 +12189,9 @@ by exp-lbrs.ulp</description>
 <net name="MCCDA" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PA28"/>
-<wire x1="55.88" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
 <label x="71.12" y="124.46" size="1.778" layer="95" align="bottom-right"/>
+<pinref part="R30" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MCDA0" class="0">
@@ -12240,6 +12267,11 @@ by exp-lbrs.ulp</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="20.32" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
 <junction x="76.2" y="20.32"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="!NTRST"/>
+<wire x1="218.44" y1="63.5" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
+<label x="208.28" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MII_ERX3" class="0">
