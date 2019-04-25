@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -46,8 +46,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -170,7 +170,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:sdcj0iBeTx26qMFKOIGRrg" pcbguid="9ea8f95f-110f-4c70-8414-319a42add99f" lastpulledtime="" lastsyncedchangeguid="5297f3d7-bc0d-b10e-48de-3cc674f11f78"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:sdcj0iBeTx26qMFKOIGRrg" pcbguid="9ea8f95f-110f-4c70-8414-319a42add99f" lastpulledtime="" lastsyncedchangeguid="75908da9-0c98-7e33-8b75-6a96b39603d1"/>
 <plain>
 <wire x1="3" y1="0" x2="77" y2="0" width="0" layer="20"/>
 <wire x1="80" y1="3" x2="80" y2="37" width="0" layer="20"/>
@@ -193,6 +193,14 @@
 <circle x="57" y="3" radius="3" width="0" layer="41"/>
 <circle x="57" y="3" radius="3" width="0" layer="42"/>
 <hole x="57" y="3" drill="2.6"/>
+<text x="60" y="5" size="1.4" layer="26" font="vector" ratio="20" rot="MR135">GND
+</text>
+<text x="63" y="5" size="1.4" layer="26" font="vector" ratio="20" rot="MR135">USB_1_DM</text>
+<text x="66" y="5" size="1.4" layer="26" font="vector" ratio="20" rot="MR135">USB_1_DP
+</text>
+<text x="69" y="5" size="1.4" layer="26" font="vector" ratio="20" rot="MR135">USB_2_DM</text>
+<text x="72" y="5" size="1.4" layer="26" font="vector" ratio="20" rot="MR135">USB_2_DP
+</text>
 </plain>
 <libraries>
 <library name="parts-microchip" urn="urn:adsk.eagle:library:7686352">
@@ -7114,6 +7122,10 @@ design rules under a new name.</description>
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
