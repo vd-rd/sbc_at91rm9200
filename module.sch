@@ -11666,14 +11666,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="68.58" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="VSYS" class="0">
-<segment>
-<pinref part="SV1" gate="G$1" pin="3"/>
-<wire x1="48.26" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
-<label x="66.04" y="48.26" size="1.778" layer="95" align="bottom-right"/>
-</segment>
-</net>
-<net name="NRST" class="0">
+<net name="!RST" class="0">
 <segment>
 <pinref part="SV1" gate="G$1" pin="7"/>
 <wire x1="48.26" y1="53.34" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
@@ -12033,6 +12026,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="154.94" x2="101.6" y2="154.94" width="0.1524" layer="91"/>
 <label x="93.98" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="G$1" pin="3"/>
+<wire x1="48.26" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<label x="66.04" y="48.26" size="1.778" layer="95" align="bottom-right"/>
 </segment>
 </net>
 <net name="REG_EN" class="0">
@@ -13802,6 +13800,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="218.44" y1="63.5" x2="208.28" y2="63.5" width="0.1524" layer="91"/>
 <label x="208.28" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC6" gate="G$1" pin="/RST"/>
+<wire x1="203.2" y1="-48.26" x2="187.96" y2="-48.26" width="0.1524" layer="91"/>
+<label x="190.5" y="-48.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MII_ETXER" class="0">
 <segment>
@@ -13847,13 +13850,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="60.96" y1="116.84" x2="76.2" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="111.76" x2="60.96" y2="116.84" width="0.1524" layer="91"/>
 <junction x="60.96" y="116.84"/>
-</segment>
-</net>
-<net name="NRST" class="0">
-<segment>
-<pinref part="IC6" gate="G$1" pin="/RST"/>
-<wire x1="203.2" y1="-48.26" x2="187.96" y2="-48.26" width="0.1524" layer="91"/>
-<label x="190.5" y="-48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_CSB" class="0">
