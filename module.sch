@@ -1370,6 +1370,28 @@ Metric Code Size 1005</description>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 </package>
+<package name="C075-032X103" urn="urn:adsk.eagle:footprint:23155/1" library_version="36">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 7.5 mm, outline 3.2 x 10.3 mm</description>
+<wire x1="4.826" y1="1.524" x2="-4.826" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.826" y1="-1.524" x2="4.826" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.826" y1="1.524" x2="5.08" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="4.826" y1="-1.524" x2="5.08" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="-1.27" x2="-4.826" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="-5.08" y1="1.27" x2="-4.826" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="0.508" y1="0" x2="2.54" y2="0" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-0.508" y2="0" width="0.1524" layer="21"/>
+<wire x1="-0.508" y1="0.889" x2="-0.508" y2="0" width="0.4064" layer="21"/>
+<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.889" width="0.4064" layer="21"/>
+<wire x1="0.508" y1="0.889" x2="0.508" y2="0" width="0.4064" layer="21"/>
+<wire x1="0.508" y1="0" x2="0.508" y2="-0.889" width="0.4064" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.9144" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.9144" shape="octagon"/>
+<text x="-4.826" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-4.826" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="C050-025X075" urn="urn:adsk.eagle:package:8154556/2" type="model" library_version="29">
@@ -1420,6 +1442,13 @@ Metric Code Size 1005</description>
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <packageinstances>
 <packageinstance name="MA05-2"/>
+</packageinstances>
+</package3d>
+<package3d name="C075-032X103" urn="urn:adsk.eagle:package:10600575/2" type="model" library_version="36">
+<description>CAPACITOR
+grid 7.5 mm, outline 3.2 x 10.3 mm</description>
+<packageinstances>
+<packageinstance name="C075-032X103"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1575,7 +1604,7 @@ Metric Code Size 1005</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CAP-" urn="urn:adsk.eagle:component:8154557/10" prefix="C" uservalue="yes" library_version="29">
+<deviceset name="CAP-" urn="urn:adsk.eagle:component:8154557/11" prefix="C" uservalue="yes" library_version="36">
 <gates>
 <gate name="G$1" symbol="C-EU" x="0" y="0"/>
 </gates>
@@ -1638,6 +1667,18 @@ Metric Code Size 1005</description>
 <attribute name="PACKAGE" value="0603" constant="no"/>
 <attribute name="RATING" value="10V" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="075-032X103" package="C075-032X103">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10600575/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -6349,7 +6390,7 @@ Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</desc
 <rectangle x1="-10" y1="5.2925" x2="-9.2" y2="5.6675" layer="51" rot="R90"/>
 <rectangle x1="-10.8" y1="5.2925" x2="-10" y2="5.6675" layer="51" rot="R90"/>
 </package>
-<package name="BGA81C80P9X9_800X800X100" urn="urn:adsk.eagle:footprint:10365304/2" library_version="3">
+<package name="FBGA54" urn="urn:adsk.eagle:footprint:10365304/3" library_version="5">
 <description>81-BGA, collapsing, 0.80 mm pitch, 8.00 X 8.00 X 1.00 mm body
 &lt;p&gt;81-pin collapsing BGA package with 0.80 mm col pitch and 0.80 mm row pitch with body size 8.00 X 8.00 X 1.00 mm&lt;/p&gt;</description>
 <circle x="-4.554" y="3.2" radius="0.25" width="0" layer="21"/>
@@ -6431,16 +6472,16 @@ Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</desc
 <packageinstance name="TSOP54-400"/>
 </packageinstances>
 </package3d>
-<package3d name="BGA81C80P9X9_800X800X100" urn="urn:adsk.eagle:package:10365302/2" type="model" library_version="3">
+<package3d name="BGA81C80P9X9_800X800X100" urn="urn:adsk.eagle:package:10365302/3" type="model" library_version="5">
 <description>81-BGA, collapsing, 0.80 mm pitch, 8.00 X 8.00 X 1.00 mm body
 &lt;p&gt;81-pin collapsing BGA package with 0.80 mm col pitch and 0.80 mm row pitch with body size 8.00 X 8.00 X 1.00 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="BGA81C80P9X9_800X800X100"/>
+<packageinstance name="FBGA54"/>
 </packageinstances>
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="MT48LC64/32/16M-PWR" urn="urn:adsk.eagle:symbol:10333005/1" library_version="2">
+<symbol name="SDRAM-PWR" urn="urn:adsk.eagle:symbol:10333005/2" library_version="5">
 <wire x1="-5.08" y1="22.86" x2="7.62" y2="22.86" width="0.254" layer="94"/>
 <wire x1="7.62" y1="22.86" x2="7.62" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-22.86" x2="-5.08" y2="-22.86" width="0.254" layer="94"/>
@@ -6462,7 +6503,7 @@ Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</desc
 <pin name="VSS@2" x="-7.62" y="-17.78" length="short" direction="pwr"/>
 <pin name="VSS@3" x="-7.62" y="-20.32" length="short" direction="pwr"/>
 </symbol>
-<symbol name="MT48LC64M444A2" urn="urn:adsk.eagle:symbol:10333004/1" library_version="2">
+<symbol name="SDRAM-16B" urn="urn:adsk.eagle:symbol:10333004/2" library_version="5">
 <wire x1="-10.16" y1="27.94" x2="12.7" y2="27.94" width="0.254" layer="94"/>
 <wire x1="12.7" y1="27.94" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-33.02" x2="-10.16" y2="-33.02" width="0.254" layer="94"/>
@@ -6512,12 +6553,12 @@ Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</desc
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MT48LC16M16A2" urn="urn:adsk.eagle:component:10333009/3" prefix="IC" library_version="3">
+<deviceset name="MT48LC16M16A2" urn="urn:adsk.eagle:component:10333009/5" prefix="IC" library_version="5">
 <description>&lt;b&gt;256Mb: x16 SDRAM&lt;/b&gt; MT48LC16M16A2 - 4 Meg x 16 x 4 banks&lt;p&gt;
 Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</description>
 <gates>
-<gate name="P" symbol="MT48LC64/32/16M-PWR" x="35.56" y="0" addlevel="request"/>
-<gate name="G$1" symbol="MT48LC64M444A2" x="0" y="0"/>
+<gate name="P" symbol="SDRAM-PWR" x="35.56" y="0" addlevel="request"/>
+<gate name="G$1" symbol="SDRAM-16B" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TSOP54-400">
@@ -6589,7 +6630,7 @@ Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</desc
 </technology>
 </technologies>
 </device>
-<device name="F4" package="BGA81C80P9X9_800X800X100">
+<device name="F4" package="FBGA54">
 <connects>
 <connect gate="G$1" pin="!CAS" pad="F7"/>
 <connect gate="G$1" pin="!RAS" pad="F8"/>
@@ -6647,7 +6688,7 @@ Source: http://download.micron.com/pdf/datasheets/dram/sdram/256MSDRAM.pdf</desc
 <connect gate="P" pin="VSSQ@4" pad="D7"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10365302/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10365302/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -8938,7 +8979,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </library>
 <library name="parts-diodes" urn="urn:adsk.eagle:library:7531666">
 <packages>
-<package name="SOT95P280X110-6" urn="urn:adsk.eagle:footprint:7631795/1" library_version="11">
+<package name="SOT95P280X110-6" urn="urn:adsk.eagle:footprint:7631795/1" library_version="12">
 <description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.30 X 1.10 mm body
 &lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <circle x="-1.2788" y="1.7586" radius="0.25" width="0" layer="21"/>
@@ -8959,7 +9000,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT95P280X110-6" urn="urn:adsk.eagle:package:7631792/1" type="model" library_version="11">
+<package3d name="SOT95P280X110-6" urn="urn:adsk.eagle:package:7631792/1" type="model" library_version="12">
 <description>6-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.30 X 1.10 mm body
 &lt;p&gt;6-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.30 X 1.10 mm&lt;/p&gt;</description>
 <packageinstances>
@@ -8984,7 +9025,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AP65211" urn="urn:adsk.eagle:component:10451898/1" prefix="IC" uservalue="yes" library_version="11">
+<deviceset name="AP65211" urn="urn:adsk.eagle:component:10451898/1" prefix="IC" uservalue="yes" library_version="12">
 <gates>
 <gate name="G$1" symbol="AP65211A" x="0" y="-2.54"/>
 </gates>
@@ -9425,40 +9466,43 @@ by exp-lbrs.ulp</description>
 </library>
 <library name="parts-adesto" urn="urn:adsk.eagle:library:10458800">
 <packages>
-<package name="SOIC8_208MIL" urn="urn:adsk.eagle:footprint:10458802/1" library_version="2" library_locally_modified="yes">
-<description>&lt;b&gt;Small Outline IC - 208mil Wide&lt;/b&gt;</description>
-<wire x1="2.4" y1="2.615" x2="2.4" y2="-2.615" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-2.615" x2="-2.4" y2="-2.615" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-2.615" x2="-2.4" y2="2.615" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="2.615" x2="2.4" y2="2.615" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.127" layer="21"/>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.127" layer="21"/>
-<circle x="-1.9304" y="-0.889" radius="0.254" width="0.127" layer="21"/>
-<smd name="2" x="-0.635" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="3.315" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="3.315" dx="0.6" dy="2.2" layer="1"/>
-<text x="-1.905" y="0.381" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-0.381" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.815" x2="-1.66" y2="-2.715" layer="51"/>
-<rectangle x1="-0.88" y1="-3.815" x2="-0.39" y2="-2.715" layer="51"/>
-<rectangle x1="0.39" y1="-3.815" x2="0.88" y2="-2.715" layer="51"/>
-<rectangle x1="1.66" y1="-3.815" x2="2.15" y2="-2.715" layer="51"/>
-<rectangle x1="1.66" y1="2.715" x2="2.15" y2="3.815" layer="51"/>
-<rectangle x1="0.39" y1="2.715" x2="0.88" y2="3.815" layer="51"/>
-<rectangle x1="-0.88" y1="2.715" x2="-0.39" y2="3.815" layer="51"/>
-<rectangle x1="-2.15" y1="2.715" x2="-1.66" y2="3.815" layer="51"/>
+<package name="SO08-208" urn="urn:adsk.eagle:footprint:10612484/1" library_version="4">
+<description>&lt;b&gt;SOIC .208" 8 LEAD&lt;/b&gt;&lt;p&gt;
+Source: http://pdfserv.maxim-ic.com/package_dwgs/G4010-001.PDF</description>
+<wire x1="-2.665" y1="2.6308" x2="-2.665" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="0.508" x2="-2.665" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="-0.508" x2="-2.665" y2="-2.6308" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="-2.6308" x2="2.665" y2="-2.6308" width="0.1524" layer="21"/>
+<wire x1="2.665" y1="-2.6308" x2="2.665" y2="2.6308" width="0.1524" layer="21"/>
+<wire x1="2.665" y1="2.6308" x2="-2.665" y2="2.6308" width="0.1524" layer="21"/>
+<wire x1="-2.665" y1="0.508" x2="-2.665" y2="-0.508" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.665" y1="-2.2752" x2="2.54" y2="-2.2752" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="8" x="-1.905" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="2" x="-0.635" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="3" x="0.635" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="7" x="-0.635" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="6" x="0.635" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="4" x="1.905" y="-3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<smd name="5" x="1.905" y="3.4984" dx="0.6604" dy="2.032" layer="1"/>
+<text x="4.445" y="-2.54" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-3.175" y="-2.54" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<rectangle x1="1.651" y1="2.6308" x2="2.159" y2="4.025" layer="51"/>
+<rectangle x1="-2.159" y1="-4.025" x2="-1.651" y2="-2.6308" layer="51"/>
+<rectangle x1="-0.889" y1="-4.025" x2="-0.381" y2="-2.6308" layer="51"/>
+<rectangle x1="0.381" y1="-4.025" x2="0.889" y2="-2.6054" layer="51"/>
+<rectangle x1="1.651" y1="-4.025" x2="2.159" y2="-2.6308" layer="51"/>
+<rectangle x1="0.381" y1="2.6308" x2="0.889" y2="4.025" layer="51"/>
+<rectangle x1="-0.889" y1="2.6308" x2="-0.381" y2="4.025" layer="51"/>
+<rectangle x1="-2.159" y1="2.6308" x2="-1.651" y2="4.025" layer="51"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOIC8_208MIL" urn="urn:adsk.eagle:package:10458804/1" type="box" library_version="2">
-<description>&lt;b&gt;Small Outline IC - 208mil Wide&lt;/b&gt;</description>
+<package3d name="SOIC127P790X216-8" urn="urn:adsk.eagle:package:10612485/2" type="model" library_version="4">
+<description>8-SOIC, 1.27 mm pitch, 7.90 mm span, 5.28 X 5.23 X 2.16 mm body
+&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 7.90 mm span with body size 5.28 X 5.23 X 2.16 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="SOIC8_208MIL"/>
+<packageinstance name="SO08-208"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -9481,12 +9525,12 @@ by exp-lbrs.ulp</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AT45DB" urn="urn:adsk.eagle:component:10458805/1" prefix="IC" library_version="2">
+<deviceset name="AT45DB" urn="urn:adsk.eagle:component:10458805/3" prefix="IC" library_version="4">
 <gates>
 <gate name="G$1" symbol="AT45DBXXX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-S" package="SOIC8_208MIL">
+<device name="-S" package="SO08-208">
 <connects>
 <connect gate="G$1" pin="/CS" pad="4"/>
 <connect gate="G$1" pin="/RST" pad="3"/>
@@ -9498,7 +9542,7 @@ by exp-lbrs.ulp</description>
 <connect gate="G$1" pin="VCC" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10458804/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10612485/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -9616,7 +9660,7 @@ by exp-lbrs.ulp</description>
 <part name="C52" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="CAP-" device="0402" package3d_urn="urn:adsk.eagle:package:8170392/1" value="15pF"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SV2" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="MA05-2" device="" package3d_urn="urn:adsk.eagle:package:10613629/1"/>
-<part name="IC6" library="parts-adesto" library_urn="urn:adsk.eagle:library:10458800" deviceset="AT45DB" device="-S" package3d_urn="urn:adsk.eagle:package:10458804/1"/>
+<part name="IC6" library="parts-adesto" library_urn="urn:adsk.eagle:library:10458800" deviceset="AT45DB" device="-S" package3d_urn="urn:adsk.eagle:package:10612485/2"/>
 <part name="R14" library="parts-passives" library_urn="urn:adsk.eagle:library:8154151" deviceset="RES-" device="0603" package3d_urn="urn:adsk.eagle:package:8309995/2"/>
 <part name="LED1" library="parts-optosupply" library_urn="urn:adsk.eagle:library:7630749" deviceset="OSTB1204" device="C1E" package3d_urn="urn:adsk.eagle:package:7630752/2"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
