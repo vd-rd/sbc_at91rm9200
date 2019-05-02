@@ -1,20 +1,17 @@
 ## Overview
- Isolated mains supply module designed to power IoT projects that have a <15W power requirement. It is designed around readily available step-down power modules with additional filtering to ensure compliance to standard specifications.
+This module, based on Atmel(Microchip) AT91RM9200 microprocessor, is intended as a learning exercise in desining a embedded Linux development board. All the board resources and documentation is open source and can be contributed to.
 
 ### Specifications
-Two versions of the board are available, depending on the choice of the module.
- * MeanWell IRM version
- * Aimtec AMEOF version
-In both cases the boards feature:
- * 85-240V input
- * 15W output at 12V
- * 5V regulated output using an LDO
- * Current sensor for measuring board consumption
- * IEC-C6 power connector
-The board has a small footprint (80x40x25mm) with the power connector protruding an additional 3mm at the edge.
+The board is composed of:
+  * AT91RM9200 microprocessor
+  * 16MB 32bit SDRAM
+  * DataFlash memory for U-boot and environment storage
+  * MicroSD connector for rootfs and user storage
+  * Expansion header with common functions available (USART, SPI, I2C etc.)
+  * One USB host and one USB client connectors
 
 ### Resources
 You can find all necesary information to build or evaluate the module here:
-   - [View layout and schematic](https://cadlab.io/project/) 
-   - [View 3D board render](https://a360.co/2V6xbaF)
-   - [Fabrication files](https://github.com/vd-rd/hw_cape_mains/releases)
+   - [View layout and schematic](https://cadlab.io/project/1679) 
+   - [View 3D board render](https://a360.co/2G43pcl)
+   - [Fabrication files](https://github.com/vd-rd/sbc_at91rm9200/releases)
