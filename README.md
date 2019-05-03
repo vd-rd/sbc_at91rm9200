@@ -15,4 +15,3 @@ You can find all necesary information to build or evaluate the module here:
    - [View layout and schematic](https://cadlab.io/project/1679) 
    - [View 3D board render](https://a360.co/2G43pcl)
    - [Fabrication files](https://github.com/vd-rd/sbc_at91rm9200/releases)
-
