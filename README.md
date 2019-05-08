@@ -4,7 +4,7 @@ This module, based on Atmel(Microchip) AT91RM9200 microprocessor, is intended as
 ### Specifications
 The board is composed of:
   * AT91RM9200 microprocessor
-  * 16MB 32bit SDRAM
+  * 64MB SDRAM
   * DataFlash memory for U-boot and environment storage
   * MicroSD connector for rootfs and user storage
   * Expansion header with common functions available (USART, SPI, I2C etc.)
