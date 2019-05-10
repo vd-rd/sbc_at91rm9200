@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
 <layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="1" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -48,9 +48,9 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -170,7 +170,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:sdcj0iBeTx26qMFKOIGRrg" pcbguid="9ea8f95f-110f-4c70-8414-319a42add99f" lastpulledtime="" lastsyncedchangeguid="dba4ec8f-bce5-07d3-38d6-c8f6094bac9e"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyOTQ5MTcz" projecturn="a.cGVyc29uYWw6dWUyOTQ5MTczIzIwMTkwMjI0MTc4MzYzMTgx" f3durn="urn:adsk.wipprod:dm.lineage:sdcj0iBeTx26qMFKOIGRrg" pcbguid="9ea8f95f-110f-4c70-8414-319a42add99f" lastpulledtime="" lastsyncedchangeguid="0344fc84-9a2f-cac8-2204-d94288b9f26c"/>
 <plain>
 <wire x1="3" y1="0" x2="77" y2="0" width="0" layer="20"/>
 <wire x1="80" y1="3" x2="80" y2="37" width="0" layer="20"/>
@@ -202,6 +202,34 @@
 <text x="72" y="5" size="1.4" layer="26" font="vector" ratio="20" rot="MR135">USB_2_DP
 </text>
 <text x="16.6" y="5.8" size="2" layer="26" font="vector" ratio="20" rot="MR0">RMII</text>
+<polygon width="0" layer="41">
+<vertex x="0" y="15"/>
+<vertex x="2" y="15"/>
+<vertex x="2" y="5"/>
+<vertex x="0" y="5"/>
+</polygon>
+<polygon width="0" layer="42">
+<vertex x="0" y="15"/>
+<vertex x="2" y="15"/>
+<vertex x="2" y="5"/>
+<vertex x="0" y="5"/>
+</polygon>
+<polygon width="0" layer="29">
+<vertex x="0" y="15"/>
+<vertex x="2" y="15"/>
+<vertex x="2" y="5"/>
+<vertex x="0" y="5"/>
+</polygon>
+<polygon width="0" layer="30">
+<vertex x="0" y="15"/>
+<vertex x="2" y="15"/>
+<vertex x="2" y="5"/>
+<vertex x="0" y="5"/>
+</polygon>
+<text x="1.8" y="14.6" size="1.4" layer="1" font="vector" ratio="20" rot="R270" align="top-left">1</text>
+<text x="1.8" y="11.8" size="1.4" layer="2" font="vector" ratio="20" rot="R270" align="top-left">2</text>
+<text x="1.8" y="9.4" size="1.4" layer="15" font="vector" ratio="20" rot="R270" align="top-left">3</text>
+<text x="0.4" y="6.8" size="1.4" layer="16" font="vector" ratio="20" rot="SMR270" align="top-left">4</text>
 </plain>
 <libraries>
 <library name="parts-microchip" urn="urn:adsk.eagle:library:7686352">
@@ -2783,8 +2811,8 @@ may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
 <param name="layerSetup" value="(1+2*15+16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="0.2mm 0.8mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtCopper" value="0.035mm 0.0175mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.0175mm 0.035mm"/>
+<param name="mtIsolate" value="0.2mm 0.465mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="4mil"/>
 <param name="mdWirePad" value="4mil"/>
 <param name="mdWireVia" value="4mil"/>
@@ -3631,7 +3659,7 @@ design rules under a new name.</description>
 <contactref element="U2" pad="46"/>
 <contactref element="U2" pad="12"/>
 <contactref element="U2" pad="6"/>
-<polygon width="0.2" layer="2" isolate="0.3" thermals="no">
+<polygon width="0.2" layer="2" isolate="0.3" thermals="no" rank="6">
 <vertex x="-1" y="-1"/>
 <vertex x="-1" y="41"/>
 <vertex x="81" y="41"/>
@@ -4061,6 +4089,16 @@ design rules under a new name.</description>
 <via x="29.85" y="6.05" extent="1-16" drill="0.3"/>
 <wire x1="29.85" y1="6.05" x2="29.85" y2="6.65" width="0.2" layer="16"/>
 <wire x1="29.85" y1="6.65" x2="30.2" y2="7" width="0.2" layer="16"/>
+<polygon width="0.2" layer="1" isolate="0.3" thermals="no">
+<vertex x="0.4" y="22"/>
+<vertex x="15" y="22"/>
+<vertex x="15" y="7.6"/>
+<vertex x="14.8" y="7.4"/>
+<vertex x="14.8" y="5.6"/>
+<vertex x="2.4" y="5.6"/>
+<vertex x="2.4" y="15.4"/>
+<vertex x="0.4" y="15.4"/>
+</polygon>
 </signal>
 <signal name="ADDR0">
 <contactref element="U1" pad="133"/>
@@ -7968,8 +8006,8 @@ design rules under a new name.</description>
 <wire x1="17.1" y1="16" x2="17.1" y2="17.6" width="0.3" layer="1"/>
 <wire x1="60" y1="12.12" x2="60" y2="11.4757125" width="0.3" layer="1"/>
 <contactref element="+3V3" pad="TP"/>
-<wire x1="15.2" y1="10.1" x2="15" y2="10.2" width="0" layer="19" extent="1-16"/>
 <wire x1="16.5" y1="10.1" x2="15.2" y2="10.1" width="0.2" layer="16"/>
+<wire x1="15.2" y1="10.1" x2="15" y2="10.2" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="+1V8">
 <contactref element="L2" pad="2"/>
@@ -8293,6 +8331,16 @@ design rules under a new name.</description>
 <wire x1="19.2" y1="27.3" x2="18.8" y2="27.3" width="0.2" layer="1"/>
 <wire x1="18.8" y1="27.3" x2="18.8" y2="28.3" width="0.2" layer="1"/>
 </signal>
+<signal name="N$7">
+<wire x1="0.2" y1="15" x2="2" y2="15" width="0" layer="15"/>
+<wire x1="2" y1="15" x2="2" y2="5" width="0" layer="15"/>
+<wire x1="2" y1="5" x2="0.2" y2="5" width="0" layer="15"/>
+</signal>
+<signal name="N$13">
+<wire x1="0.2" y1="15" x2="2" y2="15" width="0" layer="2"/>
+<wire x1="2" y1="15" x2="2" y2="5" width="0" layer="2"/>
+<wire x1="2" y1="5" x2="0.2" y2="5" width="0" layer="2"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -8303,7 +8351,6 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 <errors>
 <approved hash="5,1,f9bc10dae48868d8"/>
-<approved hash="5,1,80d1f29262ebcd78"/>
 <approved hash="5,1,596f0a93ec0b540d"/>
 <approved hash="5,1,c1346314ab2feeee"/>
 <approved hash="5,1,b5f9fe9535fd957c"/>
@@ -8311,15 +8358,7 @@ design rules under a new name.</description>
 <approved hash="4,1,aa8fa2b73aec3aeb"/>
 <approved hash="4,1,a28f9ab0aae9aaec"/>
 <approved hash="4,1,ea4544b92c8712c9"/>
-<approved hash="5,1,40df7cce705fd48a"/>
-<approved hash="5,1,b22977018e8e6380"/>
-<approved hash="5,1,35620550b34a6f88"/>
-<approved hash="5,1,73435b0c0bfe823b"/>
-<approved hash="5,1,9508bf6e507d530c"/>
-<approved hash="5,1,f293d0dced3f790d"/>
 <approved hash="5,1,000aea280573db3e"/>
-<approved hash="5,1,ec8ef31461ecd5cb"/>
-<approved hash="5,1,a440f9a5130c5119"/>
 <approved hash="6,1,507872bfa4dc6a87"/>
 <approved hash="6,1,887613af79fc87f6"/>
 <approved hash="6,1,f6e7d010f57c5fc9"/>
